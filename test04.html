@@ -6,12 +6,12 @@
     var h = document.getElementById("i0").value;
     var w = document.getElementById("i1").value;
     var mbi = w / h * h;
-    if(mbi > 18.5){
-      document.getElementById("result").textContent = "肥満";
+    if(mbi < 18.5){
+      document.getElementById("result").textContent = "瘦せすぎ";
     } else if(mbi == 18.5){
       document.getElementById("result").textContent = "標準";
     } else {
-      document.getElementById("result").textContent = "瘦せすぎ";
+      document.getElementById("result").textContent = "肥満";
     }
    }
   </script>
