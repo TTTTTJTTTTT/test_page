@@ -27,10 +27,15 @@
       
       function UFO(_elem,_xpos){
         this.lelm = _elem;
+        this.xpos = _xpos;
         this.moveLeft = function(){
           this.xpos -= 10;
           this.elem.style.left = this.xpos + "px";
           
+        }
+        this.moveRight = function(){
+          this.xpos += 10;
+          this.elem.style.left = this.xpos + "px";
         }
         
         this.elem.style.left = this.xpos + "px";
