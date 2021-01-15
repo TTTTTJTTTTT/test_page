@@ -31,7 +31,7 @@
       
       function junishi(year){
         var r ="";
-        switch (yaer % 12) {
+        switch (year % 12) {
           case 0:
            r = "申"; break;
           case 1:
@@ -61,7 +61,7 @@
       }
       
       function calc() {
-        var y = document.getElementById("year").vafule;
+        var y = document.getElementById("year").value;
         var s0 = jikkan(y);
         var s1 = junishi(y);
         document.getElementById("y").textContent = y;
@@ -73,7 +73,7 @@
     <h2><span id="y"></span>年の干支は<span id="e"></span></h2>
     <p>
       <input id="year" value="2016">
-      <button onclick="calc()"></butonn>
+      <button onclick="calc()">計算</butonn>
     </p>
   </body>
 </html>
