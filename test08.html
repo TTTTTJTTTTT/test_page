@@ -2,11 +2,14 @@
   <head>
     <meta charaset="utf-8">
     <script>
-      var v = 2;
-      document.getElementById("info").textContent = (v % 2 == 0)?"even":"odd";
+     function calcSum(){
+       var max = document.getElementById("max").value;
+     }
     </script>
   </head>
   <body>
-    <p id="info"></p>
+    <h2>1から<span id="val"></span>の合計は<span id="val"></span></h2>
+    <input id="max" value="10">
+    <button onclick="calcSum()">合計</button>
   </body>
 </html>
