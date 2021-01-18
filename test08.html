@@ -4,11 +4,17 @@
     <script>
      function calcSum(){
        var max = document.getElementById("max").value;
+       var total = 0;
+       for (var i = 0; i < max; i++){
+         totale += i;
+       }
+       document.getElementById("val").textContent = max;
+       document.getElementById("sum").textContent = total;
      }
     </script>
   </head>
   <body>
-    <h2>1から<span id="val"></span>の合計は<span id="val"></span></h2>
+    <h2>1から<span id="val"></span>の合計は<span id="sum"></span></h2>
     <input id="max" value="10">
     <button onclick="calcSum()">合計</button>
   </body>
